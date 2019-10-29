@@ -4,108 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Diseño y tipografía</title>
 </head>
 <body>
-    <nav id="nav-bar">
-        <h1>Fundamentos del diseño aplicados a la tipografía</h1>
-    </nav>
-
-    <!--Main content starts here-->
-
-    <main id="main-doc">
-        <section id="Introduccion" class="main-section">
-            <h2>Introducción</h2>
-            <p>
-                Cuando se crea un sitio web 90% de su contenido es normalmente hecho de texto, texto que contiene toda la información de nuestro proyecto: menús, artículos, enlaces; aun sobre las imágenes colocamos texto o colocamos información debajo de ellas. A pesar de ellos, de que la mayor parte de la experiencia de un usuario es textual este es el ultimo asunto al que damos importancia (si es que le damos importancia alguna). En el siguiente proyecto tratare de exponer como aplicar fundamentos básicos del diseño grafico a la tipografía – pero que es la tipografía?
-            </p>
-        </section>
-        <section id="Historia-de-la-tipografia" class="main-section">
-            <h2>Historia de la tipografía</h2>
-            <p>
-                La palabra Tipografía proviene del griego: <i>typos</i> (impresión o dejar plasmado algo) y <i>graphos</i> (escribir). La tipografía es <em>“El arte y el proceso de creación, composición e impresión de texto (físico o digital) y tiene como objetivo principal dar orden, estructura y forma a la comunicación escrita”</em>.
-            </p>
-            <p>
-                La tipografía nace como solución al problema de reproducción de libros que originalmente tenían que ser copiados a mano. Aunque los chinos ya habían experimentado con un proceso similar en el siglo XI, no es hasta el siglo XV cuando Johann Gutenberg inventa los tipos móviles (pequeños cuadros de metal con letras en relieve encima). Johann ya había impreso su famosa <i>Biblia de 42 lineas</i> pero estas estaban impresas con tipografía gótica. Para facilitar la lectura y ahorrar espacio Johann entonces se inspira en las letras con estilo romano y es todo un éxito. Debido a esto a él se le conoce como el padre de la tipografía.
-            </p>
-        </section>
-        <section id="Categorias" class="main-section">
-            <h2>Categorias</h2>
-            <p>
-                Existen muchas clasificaciones: estilo antiguo, transicionales, moderna, humanistas, geométricas, grotescas, decorativas, caligráficas, etc. Por el bien de este proyecto las dividiremos en 3 ramos:
-            </p>
+    <div id="wrapper">
+        <nav id="navbar">
+            <header>Fundamentos del diseño aplicados a la tipografía</header>
             <ul>
-                <li>Con serifa (Serif)</li>
-                <li>Sin serifa (Sans-serif)</li>
-                <li>Decorativas (Display)</li>
+                <li><a href="#Introducción" class="nav-link">Introducción</a></li>
+                <li><a href="#Historia_de_la_tipografía" class="nav-link">Historia de la tipografía</a></li>
+                <li><a href="#Categorias" class="nav-link">Categorias</a></li>
+                <li><a href="#Fundamentos_del_Diseño" class="nav-link">Fundamentos del Diseño</a></li>
+                <li><a href="#Resumen" class="nav-link">Resumen</a></li>
             </ul>
-            <h3>Serif</h3>
-            <p>
-                Las familias tipográficas con serifa son aquellas que tienen esos pequeños detalles en los extremos. Tienen su origen en los modelos de escritura romano e itálico. Estas tipografías son muy buenas para la lectura en imprenta física ya que esos detalles ayudan a acentuar la forma de la letra.
-            </p>
-            <h3>Sans-serif</h3>
-            <p>
-                Las familias sin serifa nacen como respuesta a las nuevas tecnologías disponibles en la imprenta y por ende se siente mucho mas modernas. Con la llegada de las tecnologías digitales las tipografías de palo seco (como también se les conoce) renacen pues por su forma permiten una mejor reproducción aun en tamaños pequeños (en los cuales se perderían los detalles de las serifas)
-            </p>
-            <h3>Decorativas</h3>
-            <p>
-                Estas familias tipográficas existen solo con fines publicitarios (para llamar la atención) y no deben ser usadas en cuerpos de texto largos. Deben ser usadas solo para titulares.
-            </p>
-            <h3>Cual usar</h3>
-            <p>
-                Una vez leí un ejemplo que me gusto mucho: las tipografías Serif son un empresario y las sans serif son un hacker (Las display son ese amigo que hace trucos de magia en los semáforos). Este ejemplo no es 100% efectivo (estoy resumiendo siglos de historia y unos 2 años de clases universitaria en una frase) pero da una buena base para empezar.
-            </p>
-        </section>
-        <section id="Fundamentos-del-diseno" class="main-section">
-            <h2>Fundamentos del Diseño</h2>
-            <p>En esta parte vamos a aprender los fundamentos mas básicos del diseño:</p>
-            <ul>
-                <li>Contraste</li>
-                <li>Repetición</li>
-                <li>Alineación</li>
-                <li>Proximidad</li>
-            </ul>
-            <p>
-                empezaremos hablando de las diferentes formas de medición que pueden ser utilizadas y vamos a aprender como aplicar todo esto a nuestros trabajos.
-            </p>
+        </nav>
 
-            <h2>Medidas</h2>
-            <p>En el arte tipográfico para web existen diferentes medidas de medición:</p>
-            <ul>
-                <li>pixeles</li>
-                <li>porcentajes</li>
-                <li>centímetros</li>
-                <li>pulgadas</li>
-                <li>puntos</li>
-                <li>equis</li>
-                <li>emes</li>
-                <li>etc.</li>
-            </ul>
-            <p>seguramente te preguntas cual deberías usar. Si te soy sincero la unidad de medida por excelencia es el pixel, permite que tengas un control total de como lucirá tu fuente en cada dispositivo pero como contra parte es mucho mas trabajoso.</p>
-            <p>Existe una medida que utilizaremos durante este documento y su nombre es Rem o “raíz m” por sus siglas en ingles. Lo que hace esta medida es dar una solución de tamaños armoniosos basados en <spam class="para-code">font-size</spam> especificado en la raíz de tu documento.</p>
+        <!--Main content starts here-->
 
-            <h2>Secuencia de 2</h2>
-            <p>
-                Basados en Rem el primer principio que vamos a practicar es la secuencia de 2: Si tu párrafo es de 1rem,  tu titulo debería ser ser de 2em, el siguiente de mayor importancia 4rem y así sucesivamente.
-            </p>
-            <p>
-                Esta no es una regla definitiva, pero mientras desarrollas un ojo critico visual, es una buena forma de crear una jerarquía cohesiva en tus textos. Una vez te sientas cómodo haciendo esto puedes empezar a romper la regla. De por si, es lo que he estado haciendo en esta pagina.
-            </p>
+        <main id="main-doc">
+            <section id="Introducción" class="main-section">
+                <header>Introducción</header>
+                <p>
+                    Cuando se crea un sitio web 90% de su contenido es normalmente hecho de texto, texto que contiene toda la información de nuestro proyecto: menús, artículos, enlaces; aun sobre las imágenes colocamos texto o colocamos información debajo de ellas. A pesar de ellos, de que la mayor parte de la experiencia de un usuario es textual este es el ultimo asunto al que damos importancia (si es que le damos importancia alguna). En el siguiente proyecto tratare de exponer como aplicar fundamentos básicos del diseño grafico a la tipografía – pero que es la tipografía?
+                </p>
+            </section>
+            <section id="Historia_de_la_tipografía" class="main-section">
+                <header>Historia de la tipografía</header>
+                <p>
+                    La palabra Tipografía proviene del griego: <i>typos</i> (impresión o dejar plasmado algo) y <i>graphos</i> (escribir). La tipografía es <em>“El arte y el proceso de creación, composición e impresión de texto (físico o digital) y tiene como objetivo principal dar orden, estructura y forma a la comunicación escrita”</em>.
+                </p>
+                <p>
+                    La tipografía nace como solución al problema de reproducción de libros que originalmente tenían que ser copiados a mano. Aunque los chinos ya habían experimentado con un proceso similar en el siglo XI, no es hasta el siglo XV cuando Johann Gutenberg inventa los tipos móviles (pequeños cuadros de metal con letras en relieve encima). Johann ya había impreso su famosa <i>Biblia de 42 lineas</i> pero estas estaban impresas con tipografía gótica. Para facilitar la lectura y ahorrar espacio Johann entonces se inspira en las letras con estilo romano y es todo un éxito. Debido a esto a él se le conoce como el padre de la tipografía.
+                </p>
+            </section>
+            <section id="Categorias" class="main-section">
+                <header>Categorias</header>
+                <p>
+                    Existen muchas clasificaciones: estilo antiguo, transicionales, moderna, humanistas, geométricas, grotescas, decorativas, caligráficas, etc. Por el bien de este proyecto las dividiremos en 3 ramos:
+                </p>
+                <ul>
+                    <li>Con serifa (Serif)</li>
+                    <li>Sin serifa (Sans-serif)</li>
+                    <li>Decorativas (Display)</li>
+                </ul>
+                <h2>Serif</h2>
+                <p>
+                    Las familias tipográficas con serifa son aquellas que tienen esos pequeños detalles en los extremos. Tienen su origen en los modelos de escritura romano e itálico. Estas tipografías son muy buenas para la lectura en imprenta física ya que esos detalles ayudan a acentuar la forma de la letra.
+                </p>
+                <code>
+                        {font-family: 'Slabo 27px', serif;}
+                    </code>
+                <h2>Sans-serif</h2>
+                <p>
+                    Las familias sin serifa nacen como respuesta a las nuevas tecnologías disponibles en la imprenta y por ende se siente mucho mas modernas. Con la llegada de las tecnologías digitales las tipografías de palo seco (como también se les conoce) renacen pues por su forma permiten una mejor reproducción aun en tamaños pequeños (en los cuales se perderían los detalles de las serifas)
+                </p>
+                <code>
+                    {font-family: "PT Sans", sans-serif;}
+                </code>
+                <h2>Decorativas</h2>
+                <p>
+                    Estas familias tipográficas existen solo con fines publicitarios (para llamar la atención) y no deben ser usadas en cuerpos de texto largos. Deben ser usadas solo para titulares.
+                </p>
+                <code>
+                    {font-family: "Modak"}
+                </code>
+                <h2>Cual usar</h2>
+                <p>
+                    Una vez leí un ejemplo que me gusto mucho: las tipografías Serif son un empresario y las sans serif son un hacker (Las display son ese amigo que hace trucos de magia en los semáforos). Este ejemplo no es 100% efectivo (estoy resumiendo siglos de historia y unos 2 años de clases universitaria en una frase) pero da una buena base para empezar.
+                </p>
+            </section>
+            <section id="Fundamentos_del_Diseño" class="main-section">
+                <header>Fundamentos del Diseño</header>
+                <p>En esta parte vamos a aprender los fundamentos mas básicos del diseño:</p>
+                <ul>
+                    <li>Contraste</li>
+                    <li>Repetición</li>
+                    <li>Alineación</li>
+                    <li>Proximidad</li>
+                </ul>
+                <p>
+                    empezaremos hablando de las diferentes formas de medición que pueden ser utilizadas y vamos a aprender como aplicar todo esto a nuestros trabajos.
+                </p>
 
-            <h2>Proximidad</h2>
-            <p>Este fundamento se refiere a los cerca o lejos que deben estar unos elementos de otros. La cercanía entre elementos crea o rompe relaciones y hace mucho mas fácil digerir el contenido. Las propiedades que manejan este principio son <spam class="para-code">margin</spam>, <spam class="para-code">padding</spam> y <spam class="para-code">line-height</spam>.</p>
+                <h2>Medidas</h2>
+                <p>En el arte tipográfico para web existen diferentes medidas de medición:</p>
+                <ul>
+                    <li>pixeles</li>
+                    <li>porcentajes</li>
+                    <li>centímetros</li>
+                    <li>pulgadas</li>
+                    <li>puntos</li>
+                    <li>equis</li>
+                    <li>emes</li>
+                    <li>etc.</li>
+                </ul>
+                <p>seguramente te preguntas cual deberías usar. Si te soy sincero la unidad de medida por excelencia es el pixel, permite que tengas un control total de como lucirá tu fuente en cada dispositivo pero como contra parte es mucho mas trabajoso.</p>
+                <p>Existe una medida que utilizaremos durante este documento y su nombre es Rem o “raíz m” por sus siglas en ingles. Lo que hace esta medida es dar una solución de tamaños armoniosos basados en <spam class="para-code">font-size</spam> especificado en la raíz de tu documento.</p>
 
-            <h2>Alineación</h2>
-            <p>El principio de la alineación nos dice que nada debe estar colocado en la pagina de forma arbitraria. Todos los elementos deben tener una conexión visual con algún otro elemento en la pagina. Esto puede ser logrado con las propiedades <spam class="para-code">text-align</spam> y con propiedades de composición como <spam class="para-code">flexbox</spam> o <spam class="para-code">Grid</spam>.</p>
+                <h2>Secuencia de 1</h2>
+                <p>
+                    Basados en Rem el primer principio que vamos a practicar es la secuencia de 2: Si tu párrafo es de 1rem,  tu titulo debería ser ser de 2em, el siguiente de mayor importancia 3rem y así sucesivamente.
+                </p>
+                <code>
+                    h1{font-size:3rem}
+                    h2{font-size:2rem}
+                    p{font-size:1rem}
+                </code>
+                <p>
+                    Esta no es una regla definitiva, pero mientras desarrollas un ojo critico visual, es una buena forma de crear una jerarquía cohesiva en tus textos. Una vez te sientas cómodo haciendo esto puedes empezar a romper la regla. De por si, es lo que he estado haciendo en esta pagina.
+                </p>
 
-            <h2>Repetición</h2>
-            <p>
-                Repetición es el principio mas simple: Una vez que has usando un elemento, asegurate de repetirlo alguna otra vez en la pagina. Eso crea cohesividad en todo el documento. Ya somos concientes de este principio cuando usamos Títulos y párrafos, por ejemplo, siempre lucen similar. Para lograr este principio es importante definir las clases de los los elementos y asegurarnos de utilizar las mismas clases siempre que sea posible.
-            </p>
+                <h2>Proximidad</h2>
+                <p>Este fundamento se refiere a los cerca o lejos que deben estar unos elementos de otros. La cercanía entre elementos crea o rompe relaciones y hace mucho mas fácil digerir el contenido. Las propiedades que manejan este principio son <spam class="para-code">margin</spam>, <spam class="para-code">padding</spam> y <spam class="para-code">line-height</spam>.</p>
+                <code>
+                    p{line-height: 150%;}
 
-            <h2>Contraste</h2>
-            <p>Si dos elementos no son iguales, entonces hazlos diferentes: Totalmente diferentes. Si tienes un párrafo y un titulo, no tengas miedo, haz ese titulo mucho mas grande que el párrafo. Este principio esta directamente relacionado con la parte de las secuencias pero también debe puede usarse con los pesos: Tu fuente en el parrafo es Arial regular – usa Arial Bold para tu titulo. Tu párrafo tiene un estilo serif – usa Sanf serif en tu titulo. Tu color de fondo es tenue – usa un color fuerte en tus textos. Si vas a diferenciar algo, asegurate de que sea lo suficientemente diferente.</p>
-        </section>
-    </main>
+                    #wrapper{
+                        display:flex;
+                        margin: 0 2rem;
+                    }
+                    #navbar{
+                        margin-right: 2rem;
+                    }
+                </code>
+
+                <h2>Alineación</h2>
+                <p>El principio de la alineación nos dice que nada debe estar colocado en la pagina de forma arbitraria. Todos los elementos deben tener una conexión visual con algún otro elemento en la pagina. Esto puede ser logrado con las propiedades <spam class="para-code">text-align</spam> y con propiedades de composición como <spam class="para-code">flexbox</spam> o <spam class="para-code">Grid</spam>.</p>
+
+                <code>
+                        #wrapper{display:flex;}
+
+                        p{text-align: left;}
+                </code>
+
+                <h2>Repetición</h2>
+                <p>
+                    Repetición es el principio mas simple: Una vez que has usando un elemento, asegurate de repetirlo alguna otra vez en la pagina. Eso crea cohesividad en todo el documento. Ya somos concientes de este principio cuando usamos Títulos y párrafos, por ejemplo, siempre lucen similar. Para lograr este principio es importante definir las clases de los los elementos y asegurarnos de utilizar las mismas clases siempre que sea posible.
+                </p>
+                <code>
+                     &lt;... class="main-section"&gt; 
+                     &lt;spam class="para-code" &gt;  
+                </code>
+                
+                <h2>Contraste</h2>
+                <p>Si dos elementos no son iguales, entonces hazlos diferentes: Totalmente diferentes. Si tienes un párrafo y un titulo, no tengas miedo, haz ese titulo mucho mas grande que el párrafo. Este principio esta directamente relacionado con la parte de las secuencias pero también debe puede usarse con los pesos: Tu fuente en el parrafo es Arial regular – usa Arial Bold para tu titulo. Tu párrafo tiene un estilo serif – usa Sanf serif en tu titulo. Tu color de fondo es tenue – usa un color fuerte en tus textos. Si vas a diferenciar algo, asegurate de que sea lo suficientemente diferente.</p>
+                <code>
+                        *{
+                            font-family: "PT Sans", Arial, Helvetica, sans-serif;
+                            font-size: 16px;
+                            line-height: 150%;
+                        }
+                        
+                        h1{
+                            font-weight: bold;
+                            font-size: 3rem;
+                            line-height: 120%;
+                        }
+                        
+                        h2 {
+                            font-weight: 400;
+                            font-size: 2rem;
+                            line-height: 120%;
+                        }
+                        code{
+                            font-family: 'Slabo 27px', serif;
+                            margin: 1rem 1rem;
+                            padding: 1rem;
+                            color: darkslategray;
+                            background-color: lightblue;
+                            display: block;
+                            white-space: pre-wrap 
+                        }
+                </code>
+            </section>
+            <section id="Resumen" class="main-section">
+                <header>Resumen</header>
+                <p>Asegurate de poner en practica estos principios. Si quieres saber mas al respecto te recomiendo leer The non designer’s design book que fue el libro del que aprendi estos principios. Exito.</p>
+            </section>
+        </main>
+    </div>  
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

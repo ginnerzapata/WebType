@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Slabo+27px&display=swap');
+
+@media only screen and (max-width: 768px) {
+}
+
+*{
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+header{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-top:3rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top:3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 120%;
+}
+
+.para-code{
+    font-family: 'Slabo 27px', serif;
+    padding: 2px;
+    color: darkslategray;
+    background-color: lightblue;
+    border-radius: 2px;
+}
+
+a{
+    font-weight: bold;
+    color: darkslategray;
+    text-decoration: none;
+}
+a:hover{
+    color: lightblue;
+}
+li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+code{
+    font-family: 'Slabo 27px', serif;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    color: darkslategray;
+    background-color: lightblue;
+    display: block;
+    white-space: pre-wrap 
+}
+
+#wrapper{
+    margin: 0 2rem;
+}
+
+#navbar{
+    margin-right: 2rem;
+    position:fixed;
+    top: 0;
+    left:0;
+    width:30%;
+    height: 100%;
+    background-color: white;
+    padding-left:2rem;
+}
+#main-doc{
+    overflow: auto;
+    margin-left: 30%;
+    padding-left: 3rem;
+}
